@@ -15,8 +15,7 @@ function createInputLink() {
 }
 
 function generateHtml(responseJson) {
-    console.log(responseJson);
-    $('.results-img').
+    
 }
 
 $(createInputLink);
