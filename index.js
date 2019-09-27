@@ -1,7 +1,7 @@
 function getDogImage(link) {
-    fetch(link);
-    .then(respone => response.json);
-    .then
+    fetch(link)
+    .then(response => response.json)
+    .then(responseJson => displayResults(responseJson))
 }
 
 function createInputLink() {
@@ -13,8 +13,9 @@ function createInputLink() {
     })
 }
 
-function generateHtml() {
-
+function generateHtml(responseJson) {
+    console.log(responseJson);
+    $('.results-img').
 }
 
 $(createInputLink);
