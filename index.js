@@ -1,7 +1,8 @@
 function getDogImage(link) {
     fetch(link)
-    .then(response => response.json)
-    .then(responseJson => displayResults(responseJson))
+        .then(response => response.json)
+        .then(responseJson => generateHtml(responseJson))
+        .catch(error => alert('Something went wrong. Try again later.'))
 }
 
 function createInputLink() {
